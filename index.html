@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="isomeric.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <title>Document</title>
     <style>
         *{
@@ -11,6 +14,7 @@
             box-sizing: border-box;
             background-color: #3e3e3e;
         }
+
         .master{
             max-width: 1380px;
             margin: auto;
@@ -23,6 +27,7 @@
         .logo{
             display: flex;
             align-items: center;
+            cursor: pointer;
         }
         .text-logo{
             font-size: 25px;
@@ -30,6 +35,7 @@
             margin-left: 20px;
             text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
             color: #fff;
+            cursor: pointer;
         }
         b{
             color: rgb(78, 223, 223);
@@ -42,7 +48,6 @@
             justify-content: space-around;
             align-items: center;
             box-shadow: 3px 2px 4px gray;
-            
         }
         a{
             text-decoration: none;
@@ -61,18 +66,43 @@
            background: transparent;
            color: rgb(28, 223, 223);
            font-size: 18px;
+           transition: 1s;
         }
         button:hover{
-            background-color: rgba(24, 23, 23, 0.583);
+            color: #3e3e3e;
+            background-color: rgb(28, 223, 223);
         }
         .section1{
-           margin-top: 10px;
-           display: flex;
-           justify-content: space-between;
+         width:100%;
+         height: 600px;
+         display: flex;
+         justify-content: space-around;
+         margin-top: 20px;
         }
-        .img2{
+        .left{
             width: 500px;
             height: 500px;
+            margin-left: 20px;
+            margin-top: 30px;
+        }
+        .right{
+            width: 500px;
+            height: 500px;
+        }
+        .heading{
+            font-size: 35px;
+            font-family: sans-serif;
+            color: white;
+        }
+        
+        .img3{
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+        }
+
+        i{
+           font-size: 30px;
         }
     </style>
 </head>
@@ -89,21 +119,23 @@
              <a class="A" href="#"><b>V</b>isit</a>
              <a class="A" href="#"><b>O</b>rder-Now</a>
              <a class="A" href="#"><b>S</b>elect-Books</a>
-             <a class="A" href="#"><b>A</b>dd-to-Cart</a>
+             <a class="A" href="#"><b>A</b>dd-to-Cart <i class="fas fa-shopping-cart"></i></a>
            </div>
             <div class="buttons">
                 <button>Login</button>
                 <button>Sign-Up</button>
             </div>
       </div>
-      <!-- <div class="section1">
-         <div class="left">
-           <h1></h1>
+          <div class="section1">
+               <div class="left">
+                 <h1><span class="heading"><b>B</b>U<b>Y</b> YOUR <b>B</b>O<b>O</b>K<b>S</b> AT THE <b>B</b>E<b>S</b>T P<b>R</b>ICE</span></h1>
+                 <br><br>
+               </div>
+               <div class="right">
+                 <img class="img3" src="books1.jpg" alt="sorry">
+               </div>
           </div>
-          <div class="right">
-            <img class="img2" src="" alt="">
-           </div>
-      </div> -->
+            
     </div>
 
 
